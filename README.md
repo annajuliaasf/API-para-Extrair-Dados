@@ -101,6 +101,8 @@ Exemplo:
 
 --- 
  ## Link do Vídeo do Processo em Funcionamento 
- Em razão das limitações de hardware do ambiente testado, o carregamento de cada documento demorou em cerca de um minuto, por isso, o tempo de espera foi acelerado. 
-[Assista ao vídeo de demonstração no YouTube]([https://www.youtube.com/watch?v=ID_DO_VIDEO](https://youtu.be/W-7hs-4x6-w))
+ Em razão das limitações de hardware do ambiente testado, o carregamento de cada documento demorou em cerca de um minuto, por isso, o tempo de espera foi acelerado.
+ 
+[Assista ao vídeo de demonstração no YouTube](https://youtu.be/W-7hs-4x6-w)
+
 
