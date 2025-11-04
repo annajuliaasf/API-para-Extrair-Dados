@@ -120,21 +120,18 @@ def extract_from_image_tesseract_only(image: Image.Image) -> Tuple[str, List[str
     tables = []
 
     if not ocr_data.empty:
-        # Filter out null text entries
+
         ocr_data = ocr_data[ocr_data['text'].notnull()].copy()
 
         if not ocr_data.empty and len(ocr_data) > 0:
-            # Group words by line (top position) - 20px tolerance
             ocr_data['line_num'] = (ocr_data['top'] // 20)
 
             grouped = ocr_data.groupby('line_num')
             table_rows = []
 
             for _, group in grouped:
-                # Sort words left to right
                 row_words = group.sort_values('left')['text'].tolist()
 
-                # Lines with multiple words could be table rows
                 if len(row_words) >= 2:
                     table_rows.append(row_words)
 
