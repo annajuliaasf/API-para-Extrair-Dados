@@ -42,7 +42,6 @@ async def upload_image(file: UploadFile = File(...)) -> Dict:
         )
 
     try:
-        # Read file and determine type
         file_bytes = await file.read()
         file_type = "pdf" if file.content_type == "application/pdf" else "image"
 
@@ -109,8 +108,6 @@ def chat(prompt: str, use_context: bool = True):
             }
         raise HTTPException(status_code=500, detail=f"Erro: {str(e)}")
 
-
-# ======= CONTEXT MANAGEMENT =======
 @app.post("/clear-context")
 def clear_context():
     document_context.clear()
