@@ -88,9 +88,6 @@ Foi desenvolvida uma **API REST** utilizando o framework **FastAPI**, responsáv
 - Servir o chatbot que responde perguntas sobre os documentos processados.  
 
 ---
-### Acurácia
-
-A acurácia do projeto não foi de 100%, uma vez que são determinantes fatores como qualidade da imagem e rotação. Porém, em testes com documentos nítidos, o sistema apresentou um bom funcionamento. 
 
 ### 💬 Chatbot Inteligente
 
@@ -99,10 +96,16 @@ Exemplo:
 > “Qual o nome, CPF e filiação existentes na CNH”  
 > “Qual o valor da conta de luz?”
 
+---
+### Acurácia
+
+A acurácia do projeto não foi de 100%, uma vez que são determinantes fatores como qualidade da imagem e rotação. Porém, em testes com documentos nítidos, o sistema apresentou um bom funcionamento. 
+
 --- 
  ## Link do Vídeo do Processo em Funcionamento 
  Em razão das limitações de hardware do ambiente testado, o carregamento de cada documento demorou em cerca de um minuto, por isso, o tempo de espera foi acelerado.
  
 [Assista ao vídeo de demonstração no YouTube](https://youtu.be/W-7hs-4x6-w)
+
 
 
